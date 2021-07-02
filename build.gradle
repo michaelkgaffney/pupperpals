@@ -45,9 +45,14 @@ asciidoctor {
 	dependsOn test
 }
 
+asciidoctor.doLast {
+	copy {
+		from 'build/asciidoc/html5'
+		into 'build/resources/main/static'
+		include 'index.html'
+	}
+}
+
 bootJar {
 	dependsOn asciidoctor
-	from ("${asciidoctor.outputDir}/html5") {
-		into 'static/docs'
-	}
 }
