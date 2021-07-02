@@ -13,4 +13,5 @@ public class PupperPalsController {
     public void redirectToDocs(HttpServletResponse httpServletResponse){
         httpServletResponse.setHeader("Location", "/docs/index.html");
     }
+
 }
