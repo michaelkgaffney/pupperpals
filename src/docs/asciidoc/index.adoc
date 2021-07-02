@@ -1,0 +1,12 @@
+
+Get Puppers
+
+.request
+include::{snippets}/puppers GET/http-request.adoc[]
+
+.response
+include::{snippets}/puppers GET/http-response.adoc[]
+
+.response-fields
+include::{snippets}/puppers GET/response-fields.adoc[]
+
