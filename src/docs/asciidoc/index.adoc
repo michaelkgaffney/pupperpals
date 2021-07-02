@@ -2,11 +2,11 @@
 Get Puppers
 
 .request
-include::{snippets}/puppers GET/http-request.adoc[]
+include::{snippets}/puppers_GET/http-request.adoc[]
 
 .response
-include::{snippets}/puppers GET/http-response.adoc[]
+include::{snippets}/puppers_GET/http-response.adoc[]
 
 .response-fields
-include::{snippets}/puppers GET/response-fields.adoc[]
+include::{snippets}/puppers_GET/response-fields.adoc[]
 

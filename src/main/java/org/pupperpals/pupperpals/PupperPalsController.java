@@ -12,7 +12,7 @@ public class PupperPalsController {
     @GetMapping("/")
     @ResponseStatus(HttpStatus.FOUND)
     public void redirectToDocs(HttpServletResponse httpServletResponse){
-        httpServletResponse.setHeader("Location", "/docs/index.html");
+        httpServletResponse.setHeader("Location", "/index.html");
     }
 
 }
