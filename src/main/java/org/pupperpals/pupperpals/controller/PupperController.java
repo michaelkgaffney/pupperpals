@@ -22,4 +22,11 @@ public class PupperController {
         return new ResponseEntity(service.findAllPuppers(), HttpStatus.OK);
     }
 
+    @PostMapping("/pupper")
+    public ResponseEntity<Pupper> addPupper(@RequestBody Pupper p) {
+
+        service.addPupper(p);
+        return new ResponseEntity(p, HttpStatus.CREATED);
+    }
+
 }

@@ -39,4 +39,9 @@ public class ServiceTests {
 
         assertEquals(puppers, actual);
     }
+
+    @Test
+    void testAddPupper() {
+        //No possibility of failing unit tests currently
+    }
 }

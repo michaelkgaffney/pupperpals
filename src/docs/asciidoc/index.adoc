@@ -1,12 +1,28 @@
+= Pupper Pals API
 
-Get Puppers
+=== Get Puppers
+
 
 .request
-include::{snippets}/puppers_GET/http-request.adoc[]
+include::{snippets}/puppers GET/http-request.adoc[]
 
 .response
-include::{snippets}/puppers_GET/http-response.adoc[]
+include::{snippets}/puppers GET/http-response.adoc[]
 
 .response-fields
-include::{snippets}/puppers_GET/response-fields.adoc[]
+include::{snippets}/puppers GET/response-fields.adoc[]
+
+=== Add a new Pupper
+
+.request
+include::{snippets}/pupper POST/http-request.adoc[]
+
+.request-fields
+include::{snippets}/pupper POST/request-fields.adoc[]
+
+.response
+include::{snippets}/pupper POST/http-response.adoc[]
+
+.response-fields
+include::{snippets}/pupper POST/response-fields.adoc[]
 

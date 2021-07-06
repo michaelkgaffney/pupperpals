@@ -18,5 +18,9 @@ public class PupperService {
         return repo.findAll();
     }
 
+    public void addPupper(Pupper p) {
+        repo.save(p);
+    }
+
 
 }
