@@ -26,3 +26,17 @@ include::{snippets}/pupper POST/http-response.adoc[]
 .response-fields
 include::{snippets}/pupper POST/response-fields.adoc[]
 
+=== Update an Existing Pupper
+
+.request
+include::{snippets}/pupper PATCH/http-request.adoc[]
+
+.request-fields
+include::{snippets}/pupper PATCH/request-fields.adoc[]
+
+.response
+include::{snippets}/pupper PATCH/http-response.adoc[]
+
+.response-fields
+include::{snippets}/pupper PATCH/response-fields.adoc[]
+
