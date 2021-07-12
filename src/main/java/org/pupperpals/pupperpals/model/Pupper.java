@@ -1,5 +1,7 @@
 package org.pupperpals.pupperpals.model;
 
+import lombok.Getter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -8,6 +10,7 @@ import java.util.Objects;
 
 
 @Entity
+@Getter
 public class Pupper {
 
     @Id
@@ -24,17 +27,6 @@ public class Pupper {
         this.breed = breed;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
 
     public void setId(long id) {
         this.id = id;

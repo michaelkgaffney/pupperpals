@@ -55,7 +55,7 @@ public class ApiTests {
         doAnswer(invocation -> {
             Pupper p = invocation.getArgument(0);
             p.setId(1);
-            return null;
+            return p;
         }).when(service).addPupper(isA(Pupper.class));
 
         Map<String, Object> body = new HashMap<>();

@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  pupper_pals_db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+#  pupper_pals_app_h2:
+  pupper_pals_app_postgres:
+    image: pupperpals:dev
+    ports:
+#      - "2000:8080"
+      - "1000:8080"
+    environment:
+#      SPRING_PROFILES_ACTIVE: h2
+      SPRING_PROFILES_ACTIVE: postgres
+    depends_on:
+      - pupper_pals_db
+

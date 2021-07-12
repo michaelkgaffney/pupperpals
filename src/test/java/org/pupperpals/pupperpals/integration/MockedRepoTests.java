@@ -65,7 +65,7 @@ public class MockedRepoTests {
         doAnswer(invocation -> {
             Pupper p = invocation.getArgument(0);
             p.setId(1);
-            return null;
+            return p;
         }).when(repo).save(isA(Pupper.class));
 
         Map<String, Object> body = new HashMap<>();

@@ -18,8 +18,8 @@ public class PupperService {
         return repo.findAll();
     }
 
-    public void addPupper(Pupper p) {
-        repo.save(p);
+    public Pupper addPupper(Pupper p) {
+        return repo.save(p);
     }
 
     public Optional<Pupper> updatePupper(Pupper p, long id) {
