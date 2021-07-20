@@ -80,10 +80,10 @@ public class MockedRepoTests {
                 .andExpect(jsonPath("name").value("Spot"))
                 .andExpect(jsonPath("breed").value("Dalmation"))
                 .andDo(document("pupper POST"
-                        ,requestFields(
+                        , requestFields(
                                 fieldWithPath("name").description("The name of the pupper being added"),
                                 fieldWithPath("breed").description("The name of the breed of the pupper being added"))
-                        ,responseFields(
+                        , responseFields(
                                 fieldWithPath("id").description("Internal ID of the added pupper. For use with PATCH"),
                                 fieldWithPath("name").description("The name of the added pupper"),
                                 fieldWithPath("breed").description("The breed name of the added pupper"))
@@ -149,10 +149,10 @@ public class MockedRepoTests {
                 .andExpect(jsonPath("name").value("Bruce"))
                 .andExpect(jsonPath("breed").value("Corgi"))
                 .andDo(document("pupper PATCH"
-                        ,requestFields(
+                        , requestFields(
                                 fieldWithPath("name").description("OPTIONAL: The updated name of the Pupper"),
                                 fieldWithPath("breed").description("OPTIONAL: The updated breed name of the Pupper"))
-                        ,responseFields(
+                        , responseFields(
                                 fieldWithPath("id").description("Internal ID of the updated pupper"),
                                 fieldWithPath("name").description("The name of the updated pupper"),
                                 fieldWithPath("breed").description("The breed name of the updated pupper"))
